@@ -2,7 +2,9 @@ package dev.jax.jaxclient;
 
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
-import net.fabricmc.fabric.api.client.keybinding.v1.KeyBindingHelper;\nimport net.fabricmc.fabric.api.event.player.AttackBlockCallback;\nimport net.minecraft.util.ActionResult;
+import net.fabricmc.fabric.api.client.keybinding.v1.KeyBindingHelper;
+import net.fabricmc.fabric.api.event.player.AttackBlockCallback;
+import net.minecraft.util.ActionResult;
 import net.fabricmc.fabric.api.client.rendering.v1.HudRenderCallback;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.DrawContext;
