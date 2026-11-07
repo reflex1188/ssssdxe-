@@ -86,7 +86,13 @@ final class Features {
         suspiciousChunkFinder = add(new Feature("Suspicious Chunk Finder",
                 "Prioritizes the closest underground light and redstone detections", Feature.Category.WORLD, true) {
             private int tick;
-            private int cursor;
+            private record Detection(
+        int x,
+        int z,
+        int redstone,
+        int powered,
+        int artificialLight
+) {}private int cursor;
             private final java.util.Map<Long, Detection> candidates = new java.util.HashMap<>();
             private final java.util.Set<Long> reported = new java.util.HashSet<>();
 
