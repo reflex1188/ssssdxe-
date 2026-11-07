@@ -193,7 +193,7 @@ final class Features {
                         Notifications.info("Nearby Suspicious Chunk",
                                 nearest.x() + ", " + nearest.z() + " | " + Math.round(distance)
                                         + "m | redstone " + nearest.redstone()
-                                        + " (active " + nearest.powered() + "), light " + nearest.light(), "!");
+                                        + " (active " + nearest.powered() + "), light " + nearest.artificialLight(), "!");
                     }
                 }
             }
